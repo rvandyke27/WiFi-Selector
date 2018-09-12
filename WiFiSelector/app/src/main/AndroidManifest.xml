@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csc214.rvandyke.wifiselector">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="WifiManager.SCAN_RESULTS_COMPLETED_ACTION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ScanResultActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:parentActivityName=".ScanResultActivity" />
+        <activity
+            android:name=".FavoriteAPListActivity"
+            android:parentActivityName=".ScanResultActivity" />
+
+        <receiver
+            android:name=".ScanResultFragment$ScanReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="WifiManager.SCAN_RESULTS_COMPLETED_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".CurrentConnectionInfoActivity"
+            android:parentActivityName=".ScanResultActivity" />
+        <activity
+            android:name=".MyMapActivity"
+            android:parentActivityName=".ScanResultActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBwK6BgfQR06OJerT7uytzLmNkqqLTgtH8" />
+
+        <activity android:name=".DogActivity"
+            android:parentActivityName=".ScanResultActivity" />
+    </application>
+
+</manifest>

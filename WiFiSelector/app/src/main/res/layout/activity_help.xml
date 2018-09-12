@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:paddingBottom="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.csc214.rvandyke.wifiselector.HelpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beginner_s_guide"
+        style="@style/headerText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/noteFormatText"
+        android:text="@string/wi_fi_networks_are_often_made_up_of_multiple_access_points_the_physical_hardware_your_phone_uses_to_access_the_internet_they_usually_look_something_like_this"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/picture_of_access_point_hardware"
+        android:id="@+id/image_view_ap"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/noteFormatText"
+        android:text="@string/your_phone_typically_doesn_t_account_for_traffic_when_it_chooses_an_access_point_only_signal_strength_so_in_places_like_libraries_too_much_burden_tends_to_fall_on_a_few_access_points"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/noteFormatText"
+        android:text="@string/this_application_lets_you_override_that_choice_based_on_your_experience_on_that_network_the_signal_strength_is_certainly_a_factor_but_it_s_a_very_fickle_thing_to_measure_small_differences_in_signal_strength_shouldn_t_perceptibly_impact_your_experience_signal_strength_is_given_as_a_number_between_1_and_10"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/noteFormatText"
+        android:text="@string/because_signal_strength_is_such_a_fussy_thing_to_measure_don_t_worry_if_an_access_point_disappears_in_all_likelyhood_it_ll_pop_back_up_again_when_you_refresh_by_swiping_down_from_the_top_of_the_screen"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/key_terms"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/noteFormatText"
+        android:text="@string/ssid_this_is_the_name_of_the_overall_network_the_same_as_the_name_you_see_when_you_choose_a_wi_fi_network_through_your_default_os"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/noteFormatText"
+        android:text="@string/bssid_this_is_a_name_you_don_t_see_the_unique_name_of_the_physical_access_point_connection_you_re_using_unlike_your_os_this_app_lets_you_choose_between_these_to_optimize_performance"/>
+
+</LinearLayout>
+</ScrollView>

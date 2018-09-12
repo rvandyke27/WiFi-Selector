@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.csc214.rvandyke.wifiselector.WifiErrorDialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/uh_oh"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/for_this_application_to_work_properly_you_must_have_wi_fi_enabled_and_connected"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/configure_wi_fi"
+        android:layout_gravity="center"
+        android:id="@+id/button_configure_wifi"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

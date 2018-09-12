@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.csc214.rvandyke.wifiselector.DogFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/click_a_button_to_add_a_dog_sound_to_the_beautiful_melody"
+        style="@style/headerText"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button_bark2"
+            android:text="@string/bark_2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/button_bark2"
+            android:layout_marginRight="20dp"
+            android:id="@+id/button_bark1"
+            android:text="@string/bark_1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_bark2"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/button_bark3"
+            android:text="@string/bark_3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button_bark5"
+            android:text="@string/bark_5"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/button_bark5"
+            android:layout_marginRight="20dp"
+            android:id="@+id/button_bark4"
+            android:text="@string/bark_4"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button_bark5"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/button_bark6"
+        android:text="@string/bark_6"/>
+    </RelativeLayout>
+
+</LinearLayout>
